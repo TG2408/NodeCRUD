@@ -15,3 +15,5 @@ const alienSchema = new mongoose.Schema({
         default: false
     }
 })
+
+module.exports = mongoose.model("Alien", alienSchema);
