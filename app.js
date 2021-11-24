@@ -12,6 +12,8 @@ con.on("open", () => {
     console.log("connected....");
 })
 
+app.use(express.json());
+
 const alienRouter = require('./routes/aliens');
 app.use('/aliens', alienRouter);
 
